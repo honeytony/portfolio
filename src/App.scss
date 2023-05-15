@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$main-bg-color: #212529;
+
+:root {
+  font-size: 24px;
+  --primary_color: #9C4CA9;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $main-bg-color;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.App {
+  font-family: 'Inter', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, button{
+  font-weight: 700;
+}
+h1{
+  font-size: 2.4rem;
+}
+h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+a.github, .github-icon {
+  width: 40px;
+  height: 40px;
+  
+  background: transparent;
+  border: none;
+  background-image: url('./img/github.svg');
+  background-size: cover;
+}
+.container{ 
+  width: 1120px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+button{ 
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}

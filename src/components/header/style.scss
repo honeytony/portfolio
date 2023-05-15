@@ -1,0 +1,89 @@
+header{ 
+    display: flex;
+    padding-top: 76px;
+    min-height: 576px;
+    color: white;
+    background-image: url('../../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    width: 100%;
+    .text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        p.desc{
+            font-size: 1.4rem;
+        }
+        p.desc-bottom{
+            font-size: 1rem;
+        }
+        .buttons{
+            margin-top: 1.4rem;
+            display: flex;
+            gap: 34px;
+            align-items: center;
+            button.contact {
+                width: 175px;
+                height: 50px;
+                background: transparent;
+                color: white;
+                text-transform: uppercase;
+                border: 3px solid #FFFFFF;
+                border-radius: 7px;
+            }   
+        }
+        
+    }
+    .elements {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        gap: 23px;
+
+        width: 1125px;
+        max-width: 100%;
+        min-height: 157px;
+        position: relative;
+        top: 115px;
+        flex-wrap: wrap;
+
+        background: #212529;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+        .icon{
+            width: 60px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+        .html{
+            background-image: url('../../img/icons/html.svg');
+        }
+        .bt{
+            background-image: url('../../img/icons/bootstrap.svg');
+        }
+        .css{
+            background-image: url('../../img/icons/css.svg');
+        }
+        .js{
+            background-image: url('../../img/icons/js.svg');
+        }
+        .react{
+            background-image: url('../../img/icons/react.svg');
+        }
+        .git{
+            background-image: url('../../img/icons/git.svg');
+        }
+        .next{
+            background-image: url('../../img/icons/next-js.svg ');
+        }
+        .sass{
+            background-image: url('../../img/icons/sass.svg');
+        }
+    }
+}
+
