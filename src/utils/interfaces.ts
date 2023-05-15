@@ -9,3 +9,11 @@ export interface IHeader {
     github_link: string; 
   }
 }
+
+export interface IProject {
+  name: string;
+  desc: string;
+  demo_link: string;
+  code_link: string;
+  image: string;
+}

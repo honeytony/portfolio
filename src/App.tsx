@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.scss';
 import { Header } from './components/header/header';
 import { Projects } from './components/projects/projects';
+import { IProject } from './utils/interfaces';
 
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
       buttons: {contact_text: 'Contact me', github_link: 'https://github.com/honeytony'},
     
   });
+  const [projects, setProjects] = useState([{name: 'asd', desc: 'asdas', image: 'ims', demo_link: 'sd', code_link: ''},{name: 'asd', desc: 'asdas', image: 'ims', demo_link: 'sd', code_link: ''},{name: 'asd', desc: 'asdas', image: 'ims', demo_link: 'sd', code_link: ''},{name: 'asd', desc: 'asdas', image: 'ims', demo_link: 'sd', code_link: ''}])
+
+  
 
 
 
@@ -20,13 +24,10 @@ function App() {
   return (
     <div className="App">
       <Header 
-      header={headerData.header}
-      desc={headerData.desc}
-      desc_bottom={headerData.desc_bottom}
-      buttons={headerData.buttons}
+      {...headerData}
       />
 
-      <Projects/>
+      <Projects {...projects}/>
     </div>
   );
 }
